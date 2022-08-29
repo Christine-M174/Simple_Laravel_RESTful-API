@@ -17,16 +17,6 @@ Terminal --> C:\xampp\htdocs\firstprojlaravel> ..>> php artisan serve
 
 -------------------------------------------------------------------------------------------------------------------
 
-### XAMPP VS. NODE.JS
-
-XAMPP :
-XAMPP is a free and open-source cross-platform web server that is primarily used when locally developing web applications.
-
-Node.js 
-Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications
-
----------------------------------------------------------------------------------------------------------------------
-
 # create a new database laravelapi
 
 change the .env file varaibles 
@@ -110,14 +100,57 @@ php artisan make:model Post -m
 php artisan make:controller PostsApiController
 
 ----------------------------------------------------------------------------------------------------------------------
+# the fully synchronous behavior of PHP
 
+Synchronous PHP code is sequential. Individual tasks must be completed before you can start another one. So with synchronous PHP, the CPU can process only one I/O task at a time...
+
+PHP serves requests synchronously. It means that each line of code executes in the synchronous manner of the script. After getting the result from one line it executes next line or wait for the result before jumping to the execution of the next line of code.
+
+https://www.zend.com/blog/why-you-should-use-asynchronous-php
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+# MVC design patterns
+
+The model-view-controller (MVC) design pattern specifies that an application consist of a data model, presentation information, and control information. The pattern requires that each of these be separated into different objects.
+
+User ---->> controller(mainpulates)----->> Model(update)----->> View 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# accessibility and security compliance
+
+https://laravel.com/docs/4.2/security
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Common PHP or web server exploits
+# 7 Most Common PHP Vulnerabilities
+
+1) SQL Injection. Probably one of the most common and well-known PHP vulnerabilities is SQLi, and it's a big problem. ...
+2) Remote File Inclusion. ...
+3) Cross-Site Scripting(XSS) ...
+4) Directory Traversal. ...
+5) Cross-Site Request Forgery(CSRF) ...
+6) Authentication Bypass. ...
+7) Session Hijacking.
+
+https://privacyaustralia.net/7-most-common-php-vulnerabilities/
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Scalability Design Principles
+
+Avoid the single point of failure. ...
+Scale horizontally, not vertically. ...
+Push work as far away from the core as possible. ...
+API first. ...
+Cache everything, always. ...
+Provide as fresh as needed data. ...
+Design for maintenance and automation. ...
+Asynchronous rather than synchronous.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # MIDDLEWARE
 How many types of middleware are there in Laravel?
 
 two types
 There are two types of Middleware in Laravel. The Global Middleware will run on every HTTP request of the application, whereas the Route Middleware will be assigned to a specific route. The middleware can be registered at app/Http/Kernel.
 
------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # THE TESTS PROGRAMS USED 
 1) postman 
