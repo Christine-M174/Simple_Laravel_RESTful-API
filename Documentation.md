@@ -52,7 +52,7 @@ php artisan migrate
 1) ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
 
 C:\xampp\mysql\bin  --->> add this path to environment variables from advanced system settings 
-
+...............................................................................................
 
 2) Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException: The POST method is not supported ...... 
 
@@ -60,12 +60,12 @@ You can also view your routes using php artisan command
 php artisan route:list
 
 php artisan optimize
-
+.................................................................................................................
 
 3) Illuminate\Database\QueryException 
 
 Problem:SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) (SQL: select * from information_schema.tables where table_schema = laravelapi and table_name = migrations and table_type = 'BASE TABLE')
-
+.....................................................................
 
 A) The error means Laravel is trying to connect to the database with invalid credentials.
 Whenever you make change to the .env file in Laravel you need to reset the cache. You need to run this command:
@@ -117,12 +117,14 @@ The model-view-controller (MVC) design pattern specifies that an application con
 User ---->> controller(mainpulates)----->> Model(update)----->> View 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # accessibility and security compliance
 
 https://laravel.com/docs/4.2/security
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Common PHP or web server exploits
-# 7 Most Common PHP Vulnerabilities
+## 7 Most Common PHP Vulnerabilities
 
 1) SQL Injection. Probably one of the most common and well-known PHP vulnerabilities is SQLi, and it's a big problem. ...
 2) Remote File Inclusion. ...
@@ -133,17 +135,19 @@ https://laravel.com/docs/4.2/security
 7) Session Hijacking.
 
 https://privacyaustralia.net/7-most-common-php-vulnerabilities/
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Scalability Design Principles
 
-Avoid the single point of failure. ...
-Scale horizontally, not vertically. ...
-Push work as far away from the core as possible. ...
-API first. ...
-Cache everything, always. ...
-Provide as fresh as needed data. ...
-Design for maintenance and automation. ...
-Asynchronous rather than synchronous.
+1) Avoid the single point of failure. ...
+2) Scale horizontally, not vertically. ...
+3) Push work as far away from the core as possible. ...
+4) API first. ...
+5) Cache everything, always. ...
+6) Provide as fresh as needed data. ...
+7) Design for maintenance and automation. ...
+8) Asynchronous rather than synchronous.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # MIDDLEWARE
 How many types of middleware are there in Laravel?
